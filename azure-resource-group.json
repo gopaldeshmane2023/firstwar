@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.microsoft.com/resource-manager/docs/2021-04-01/templates.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2021-04-01",
+      "name": "[parameters('resourceGroupName')]",
+      "location": "[parameters('location')]",
+      "properties": {}
+    }
+  ],
+  "parameters": {
+    "resourceGroupName": {
+      "type": "string",
+      "defaultValue": "mydeployment"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "eastus"
+    }
+  }
+}
