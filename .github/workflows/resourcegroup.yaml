@@ -1,25 +1,22 @@
-name: Create Azure Resource Group
+name: Create Resource group with ARM Template
 
 on:
-  push:
-    branches: [ main ]  # Trigger on pushes to the main branch
+   push:
+     branches: [ main ]  # Trigger on pushes to the main branch
 
 jobs:
-  create-resource-group:
+  create-resource:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Login to Azure
-        uses: azure/login@v1
+        uses: azure/login@v1.6.1
         with:
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          #tenantId: ${{ secrets.AZURE_TENANT_ID }}
-          
-
-      - name: Create Resource Group
-        uses: azure/arm-deploy@v1
+    
+      - name: Deploy ACR with ARM Template
+        uses: azure/arm-deploy@v1.0.9
         with:
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
           template: "./azure-resource-group.json"
-          deploymentName: mydeployment
+          deploymentName: "mydeployment"
