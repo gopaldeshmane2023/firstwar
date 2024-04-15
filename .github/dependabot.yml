@@ -9,7 +9,7 @@ updates:
     directory: "Znode.Multifront/PluginManager/Znode.Plugin.Api.Core/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "14:33"
+      time: "14:55"
       timezone: "Asia/Kolkata"
     open-pull-requests-limit: 350
-    target-branch: "DEV-907-changes-in-dependabot"
+    target-branch: "main"
