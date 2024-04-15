@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Znode10.Plugin.Api.Core</PackageId>
+    <Title>Znode10.Plugin.Api.Core</Title>
+    <Version>10.0.0</Version>
+    <Authors>Znode</Authors>
+    <Description>Znode10.Plugin.Api.Core</Description>
+    <Copyright>2024</Copyright>
+	  <AssemblyVersion>10.0.0.0</AssemblyVersion>
+	  <FileVersion>10.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Znode.Api.Core\Znode.Api.Core.csproj" />
+    <ProjectReference Include="..\Znode.Engine.Plugin.Models\Znode.Engine.Plugin.Models.csproj" />
+    <ProjectReference Include="..\Znode.Engine.Plugin.Services\Znode.Engine.Plugin.Services.csproj" />
+    <ProjectReference Include="..\Znode.Plugin.Cache\Znode.Plugin.Cache.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="NsDepCop" Version="1.8.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.0.0" />
+    <PackageReference Include="Znode10.Libraries.Abstract" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.Libraries.Common.Helper" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.Libraries.Framework.Business" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.PluginEngine.Api.Models" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.PluginEngine.Client" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.PluginLibraries.RemoteServiceUtility" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.PluginLibraries.Utilities" Version="10.0.0-gamma007" />
+    <PackageReference Include="Znode10.PluginServer.Common.Contracts" Version="10.0.0-gamma007" />
+  </ItemGroup>
+
+</Project>
