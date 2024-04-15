@@ -6,10 +6,10 @@
 version: 2 
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "Znode.Multifront/PluginManager/Znode.Plugin.Api.Core/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "14:28"
+      time: "14:33"
       timezone: "Asia/Kolkata"
     open-pull-requests-limit: 350
     target-branch: "DEV-907-changes-in-dependabot"
