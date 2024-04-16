@@ -9,11 +9,11 @@ updates:
     directory: "Znode.Multifront/PluginManager/Znode.Plugin.Api.Core/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "09:30"
+      time: "12:45"
       # timezone: "Asia/Kolkata"
     # open-pull-requests-limit: 350
     target-branch: "main"
-vulnerability:
+# vulnerability:
   - package-ecosystem: "nuget"
     directory: "."
     schedule:
