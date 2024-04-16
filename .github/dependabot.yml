@@ -13,7 +13,7 @@ updates:
       # timezone: "Asia/Kolkata"
     # open-pull-requests-limit: 350
     target-branch: "main"
-
+vulnerability:
   - package-ecosystem: "nuget"
     directory: "."
     schedule:
